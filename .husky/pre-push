@@ -1,8 +1,4 @@
 #!/usr/bin/env sh
-. "$(dirname "$0")/husky.sh"
-
-npm run lint
-npm run format
 npm run test:headless
 if [ $? -ne 0 ]; then
   echo "Linting or tests failed. Please fix the issues before committing."

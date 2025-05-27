@@ -12,8 +12,12 @@
     "test:coverage": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
     "lint": "eslint . --config config/eslint.config.js --ext .ts,.html",
     "lint:fix": "eslint . --config config/.eslintrc.json --fix",
-    "format": "prettier config config/.prettierrc --write \"**/*.{ts,html,scss}\"",
-    "format:check": "prettier config config/.prettierrc --check \"**/*.{ts,html,scss}\""
+    "lint-staged": "lint-staged",
+    "format": "prettier --config config/.prettierrc --write \"**/*.{ts,html,scss}\" --log-level warn",
+    "format:check": "prettier --config config/.prettierrc --check \"**/*.{ts,html,scss}\""
+  },
+  "lint-staged": {
+    "*.{ts,html,scss}": "prettier --config config/.prettierrc --write --log-level warn"
   },
   "private": true,
   "dependencies": {
