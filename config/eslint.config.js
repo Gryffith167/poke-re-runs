@@ -43,5 +43,8 @@ module.exports = tseslint.config(
     files: ['**/*.html'],
     extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
     rules: {},
+  },
+  {
+    ignores: ['coverage/**', 'dist/**', 'node_modules/**'],
   }
 );
