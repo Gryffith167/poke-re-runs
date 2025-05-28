@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 npm run test:headless
 if [ $? -ne 0 ]; then
-  echo "Linting or tests failed. Please fix the issues before committing."
+  echo "Tests failed. Please fix the issues before committing."
   exit 1
 fi
