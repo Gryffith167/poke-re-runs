@@ -14,9 +14,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'angular-starter-kit' title`, () => {
+  it(`should have the 'cubegorithms' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-starter-kit');
+    expect(app.title).toEqual('cubegorithms');
   });
 });
