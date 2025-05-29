@@ -14,9 +14,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cubegorithms' title`, () => {
+  it(`should have the 'poke-re-runs' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cubegorithms');
+    expect(app.title).toEqual('poke-re-runs');
   });
 });
